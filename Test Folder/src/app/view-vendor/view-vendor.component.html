@@ -1,0 +1,34 @@
+<h2>View Vendors</h2>
+
+<div *ngIf="vendors.length > 0; else noVendors">
+  <ul>
+    <li *ngFor="let vendor of vendors">
+      <div>
+        <strong>Vendor ID:</strong> {{ vendor.vendorID }}
+      </div>
+      <div>
+        <strong>Long Name:</strong> {{ vendor.vendorLongName }}
+      </div>
+      <div>
+        <strong>Vendor Code:</strong> {{ vendor.vendorCode }}
+      </div>
+      <div>
+        <strong>Phone Number:</strong> {{ vendor.vendorPhoneNumber }}
+      </div>
+      <div>
+        <strong>Email:</strong> {{ vendor.vendorEmail }}
+      </div>
+      <div>
+        <strong>Created On:</strong> {{ vendor.vendorCreatedOn | date:'medium' }}
+      </div>
+      <div>
+        <strong>Status:</strong> {{ vendor.isActive ? 'Active' : 'Inactive' }}
+      </div>
+      <hr>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noVendors>
+  <p>No vendors available.</p>
+</ng-template>

@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+/* top-navigation.component.css */
+
+nav {
+    background-color: #333; /* Background color */
+    overflow: hidden;
+  }
+  
+  nav a {
+    float: left; /* Float the links to the left */
+    display: block; /* Display as block elements to fill the entire width */
+    color: white; /* Text color */
+    text-align: center; /* Center-align the text */
+    padding: 14px 16px; /* Padding for spacing */
+    text-decoration: none; /* Remove underlines from links */
+  }
+  
+  nav a:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: black; /* Text color on hover */
+  }
+  

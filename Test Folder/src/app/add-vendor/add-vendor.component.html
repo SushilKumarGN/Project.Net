@@ -1,0 +1,39 @@
+<div class="container">
+    <h2>Add Vendor</h2>
+  
+    <form (submit)="addVendor()" class="mt-4">
+        <div class="form-group">
+      <label for="vendorID">Vendor ID:</label>
+      <input type="number" id="vendorID" class="form-control" name="vendorID" [(ngModel)]="newVendor.vendorID" required>
+    </div>
+      <div class="form-group">
+        <label for="vendorLongName">Long Name:</label>
+        <input type="text" id="vendorLongName" class="form-control" name="vendorLongName" [(ngModel)]="newVendor.vendorLongName" required>
+      </div>
+      <div class="form-group">
+        <label for="vendorCode">Vendor Code:</label>
+        <input type="text" id="vendorCode" class="form-control" name="vendorCode" [(ngModel)]="newVendor.vendorCode" required>
+      </div>
+      <div class="form-group">
+        <label for="vendorPhoneNumber">Phone Number:</label>
+        <input type="text" id="vendorPhoneNumber" class="form-control" name="vendorPhoneNumber" [(ngModel)]="newVendor.vendorPhoneNumber" required>
+      </div>
+      <div class="form-group">
+        <label for="vendorEmail">Email:</label>
+        <input type="email" id="vendorEmail" class="form-control" name="vendorEmail" [(ngModel)]="newVendor.vendorEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="vendorCreatedOn">Created On:</label>
+        <input type="text" id="vendorCreatedOn" class="form-control" name="vendorCreatedOn" [(ngModel)]="newVendor.vendorCreatedOn" required>
+      </div>
+      <div class="form-group">
+        <label for="isActive">Status:</label>
+        <input type="text" id="isActive" name="isActive" class="form-control" [(ngModel)]="newVendor.isActive" value="true">
+      </div>
+      
+      
+      
+      <button type="submit" class="btn btn-primary">Add Vendor</button>
+    </form>
+  </div>
+  
