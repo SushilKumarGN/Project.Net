@@ -1,0 +1,36 @@
+<app-top-navigation></app-top-navigation>
+<div class="container">
+    <h2>Update Vendor</h2>
+    <form (ngSubmit)="updateVendor()">
+      <div class="form-group">
+        <label for="vendorId">Vendor ID:</label>
+        <input type="number" id="vendorId" [(ngModel)]="vendorToUpdate.vendorID" name="vendorId" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="vendorLongName">Vendor Name:</label>
+        <input type="text" id="vendorLongName" [(ngModel)]="vendorToUpdate.vendorLongName" name="vendorLongName" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="vendorCode">Vendor Code:</label>
+        <input type="text" id="vendorCode" [(ngModel)]="vendorToUpdate.vendorCode" name="vendorCode" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="vendorPhoneNumber">Phone Number:</label>
+        <input type="text" id="vendorPhoneNumber" [(ngModel)]="vendorToUpdate.vendorPhoneNumber" name="vendorPhoneNumber" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="vendorEmail">Email:</label>
+        <input type="email" id="vendorEmail" [(ngModel)]="vendorToUpdate.vendorEmail" name="vendorEmail" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="vendorCreatedOn">Created On:</label>
+        <input type="text" id="vendorCreatedOn" [(ngModel)]="vendorToUpdate.vendorCreatedOn" name="vendorCreatedOn" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="isActive"> IsActive</label>
+        <input type="text" id="isActive" class="form-control" name="isActive" [(ngModel)]="vendorToUpdate.isActive" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Update Vendor</button>
+    </form>
+  </div>
+  
